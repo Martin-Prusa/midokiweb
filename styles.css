@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  font-family: Arial, serif;
+}
+
+.main {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+.main .img-container {
+  background-color: #8bca25;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  position: relative;
+}
+.main .img-container .background-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+  opacity: 0.5;
+}
+.main .img-container .text {
+  color: white;
+  margin-bottom: 25px;
+  z-index: 2;
+}
+.main .img-container .text p {
+  margin: 2px;
+  display: block;
+  font-size: 15px;
+  color: #eee;
+}
+.main .img-container .text .title {
+  font-weight: bold;
+  font-size: 18px;
+}
+.main .text-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  padding: 0 5%;
+}
+.main .text-container h1 {
+  margin: 0;
+  color: #8bca25;
+  font-size: 100px;
+}
+.main .text-container h1 span {
+  color: #f6ce48;
+}
+.main .text-container h2 {
+  color: #555;
+}
+.main .text-container p {
+  color: #888;
+}
+.main .text-container button {
+  background-color: #8bca25;
+  color: white;
+  padding: 10px;
+  border: 0;
+  cursor: pointer;
+  border-radius: 10px;
+  width: 180px;
+  margin-top: 5px;
+}
+.main .text-container button:active {
+  transform: scale(0.95);
+}
+.main .text-container .dot {
+  color: #8bca25;
+  font-size: 50px;
+  letter-spacing: 20px;
+}
+.main .text-container .dot .grey {
+  color: #555555;
+}
+.main .text-container .dot .yellow {
+  color: #f6ce48;
+}
+
+@media screen and (max-width: 800px) {
+  .main .img-container {
+    display: none;
+  }
+  .main .text-container {
+    width: 90%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
